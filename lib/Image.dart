@@ -206,7 +206,7 @@ class DisplayPictureScreen extends StatelessWidget {
                       Container(
                         child: ElevatedButton(
                           onPressed: () async {
-                            //await Picture.saveImage(imagePath);
+                            await Picture.saveImage(imagePath);
                             ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                               content: Text("Image saved successfully at " + imagePath),
                             ));
